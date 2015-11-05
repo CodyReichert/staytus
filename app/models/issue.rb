@@ -67,7 +67,7 @@ class Issue < ActiveRecord::Base
       :user => self.user,
       :created_at => self.created_at,
       :text => initial_text,
-      :notify => false
+      :notify => 'f'
     )
   end
 

@@ -3,7 +3,7 @@ class CreateIssues < ActiveRecord::Migration
     create_table :issues do |t|
       t.string :title, :state
       t.integer :service_status_id
-      t.boolean :all_services, :default => true
+      t.boolean :all_services, :default => 't'
       t.timestamps null: false
     end
   end

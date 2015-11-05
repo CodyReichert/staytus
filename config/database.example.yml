@@ -6,7 +6,7 @@
 # to specify the database to connect to.
 
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
   username: staytus

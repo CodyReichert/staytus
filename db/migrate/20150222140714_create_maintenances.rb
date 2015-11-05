@@ -5,7 +5,7 @@ class CreateMaintenances < ActiveRecord::Migration
       t.text :description
       t.datetime :start_at, :finish_at
       t.integer :length_in_minutes
-      t.boolean :closed, :default => false
+      t.boolean :closed, :default => 'f'
       t.integer :user_id, :service_status_id
       t.timestamps null: false
     end
